@@ -28,4 +28,10 @@ class MainActivityTest {
         onView(withId(R.id.text_result)).check(matches(isDisplayed()))
         onView(withId(R.id.text_result)).check(matches(withText("1")))
     }
+
+    @Test
+    fun welcomeText_isDisplayed() {
+        onView(withText("Welcome to Steam Report"))
+            .check(matches(isDisplayed()))
+    }
 }
